@@ -1,5 +1,11 @@
 <?php
-$array=array(0=>1, 1=>1, 2=>2, 3=>2, 4=>2);
-$array2=array_unique($array);
-echo count($array2);
+$array=array(1, 1, 2, 2, 2, 24, 45, 3, 3, 433, 123, 67, 34, 4);
+$array2=array_count_values($array);
+$count;
+foreach($array2 as $res){
+    if($res>1){
+        $count++;
+    }
+}
+echo $count;
 ?>
